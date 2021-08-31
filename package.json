@@ -4,7 +4,8 @@
   "description": "Versão super simplificada de um Payment Service Provider (PSP).",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "main": "tsc && node main.js",
+    "test": "tsc && jest ./dist"
   },
   "repository": {
     "type": "git",
