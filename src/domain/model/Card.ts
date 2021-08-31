@@ -18,6 +18,18 @@ export class Card {
         return this.number;
     }
 
+    public getHolderName(): string {
+        return this.holder_name;
+    }
+
+    public getExpirationDate(): string {
+        return this.expiration_date;
+    }
+
+    public getCvv(): number {
+        return this.cvv;
+    }
+
     private leftFourDigits(number: number): number {
         try {
             return Number.parseFloat(number.toString().substr(-4));
