@@ -1,0 +1,23 @@
+{
+  "name": "fastpayment",
+  "version": "1.0.0",
+  "description": "Versão super simplificada de um Payment Service Provider (PSP).",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagochfc/FastPayment.git"
+  },
+  "author": "Thiago Christopher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagochfc/FastPayment/issues"
+  },
+  "homepage": "https://github.com/thiagochfc/FastPayment#readme",
+  "dependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.1.0"
+  }
+}
