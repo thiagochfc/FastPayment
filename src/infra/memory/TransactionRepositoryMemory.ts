@@ -2,17 +2,16 @@ import ITransactionRepository from '../../domain/interfaces/ITransactionReposito
 import { Transaction } from '../../domain/model/Transaction';
 
 export class TransactionRepositoryMemory implements ITransactionRepository {
-    private transaction: Transaction[];
+    private static transaction: Transaction[];
 
     constructor() {
-        this.transaction = [];
+        TransactionRepositoryMemory.transaction = [];
     }
 
     async registry(transaction: Transaction): Promise<void> {
-        this.transaction.push(transaction);
+        TransactionRepositoryMemory.transaction.push(transaction);
     }
     async getAll(): Promise<Transaction[]> {
-        return this.transaction;
+        return TransactionRepositoryMemory.transaction;
     }
-
 }
