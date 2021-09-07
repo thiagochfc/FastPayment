@@ -4,7 +4,7 @@
   "description": "Versão super simplificada de um Payment Service Provider (PSP).",
   "main": "main.js",
   "scripts": {
-    "main": "tsc && node main.js",
+    "main": "tsc && node dist/main.js",
     "test": "tsc && jest ./dist --verbose"
   },
   "repository": {
